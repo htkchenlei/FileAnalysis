@@ -1,0 +1,45 @@
+# 依赖目录
+backend/venv/
+frontend/node_modules/
+
+# 环境变量文件
+.env
+
+# 数据库文件
+backend/instance/
+
+# 上传文件
+backend/uploads/
+
+# 日志文件
+backend/logs/
+
+# 缓存文件
+__pycache__/
+*.pyc
+
+# IDE相关文件
+.vscode/
+.idea/
+
+# 构建文件
+frontend/dist/
+
+# 操作系统文件
+Thumbs.db
+.DS_Store
+
+# 测试文件
+test_*.py
+*.pdf
+*.docx
+
+# Git相关文件
+.git/
+.gitignore
+
+# 其他文件
+clear_db.py
+checklist.md
+tasks.md
+test_upload.html

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  file-analysis:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/instance:/app/instance
+      - ./backend/uploads:/app/uploads
+      - ./backend/logs:/app/logs
+      - ./backend/config.json:/app/config.json
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
