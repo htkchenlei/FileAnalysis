@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #B8A9C9;
+  --secondary: #A8E6CF;
+  --accent: #FFB7B2;
+  --background: #FFF9F0;
+  --card-bg: #FFF5F5;
+  --text-primary: #4A4A4A;
+  --text-secondary: #8A8A8A;
+  --border: #E8E8E8;
+  --success: #7DD3A8;
+  --warning: #FFD199;
+  --error: #FF9B9B;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white rounded-button px-6 py-3 font-medium transition-all duration-200 ease-out hover:shadow-hover;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-primary border-2 border-primary rounded-button px-6 py-3 font-medium transition-all duration-200 ease-out hover:bg-primary hover:text-white;
+  }
+  
+  .card {
+    @apply bg-card-bg rounded-card shadow-card p-6 transition-all duration-200 ease-out hover:shadow-hover;
+  }
+  
+  .upload-area {
+    @apply border-2 border-dashed border-primary rounded-container bg-background p-8 text-center transition-all duration-200 ease-out hover:border-solid hover:bg-[#F5EBF5];
+  }
+}

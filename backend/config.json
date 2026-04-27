@@ -1,0 +1,6 @@
+{
+  "AI_API_URL": "https://api.siliconflow.cn/v1/chat/completions",
+  "AI_API_KEY": "sk-wuytqtmqvojpydgayhrblfnbudbgvdxxeuatbqmvjxoomfrz",
+  "AI_MODEL": "Pro/MiniMaxAI/MiniMax-M2.5",
+  "AI_PROMPT": "你是一个招标文件分析专家，请从以下Markdown内容中提取出以下关键信息：\n1. 招标人：\n2. 代理机构：\n3. 开标日期：\n4. 评分标准：\n5. 其他重要信息：\n\n请以结构化的形式输出，确保信息准确完整。"
+}
